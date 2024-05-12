@@ -22,231 +22,35 @@
 
     <!-- リセットCSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
-    <!-- slick css -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <!-- cssファイル指定 -->
     <link rel="stylesheet" href="./assets/styles/main.css">
   </head>
 
   <body>
-    <header id="header" class="downMove">
-      <div class="container header__container">
-        <h1 class="header__container__logo mercellus fw-regular">Kira-meki
-        </h1>
-      </div>
+    <header>
     </header>
     <main>
       <section id="mainVisual">
-        <div class="mainVisual__wrapper">
-          <div class="container mainVisual__container__inner">
-            <div class="mainVisual__container__inner__text">
-              <h2 class="mainVisual__title fw-regular">Kirameki<br>Cream</h2>
-              <p id="header-anm-point" class="mainVisual__subTitle">肌のうるおい、煌めく。</p>
+        <div class="__container">
+          <img src="./assets/images/mainVisual/mainVisual_sp.jpg" alt="">
+          <h1><img src="./assets/images/mainVisual/logo_Kira-meki_sp.png" alt="Kira-meki" class="__logo"></h1>
+          <div class="__container__inner">
+            <div class="__container__inner__text">
+              <h2 class="__title regular">Kirameki<br>Cream</h2>
+              <p class="__subTitle">肌のうるおい、煌めく。</p>
             </div>
           </div>
         </div>
       </section>
-      <!-- 購入 1回目 -->
-      <section id="purchase-1" class="purchase purchase-1">
-        <div class="container purchase__container">
-          <div class="purchase__container__inner flex-column-center">
-            <div class="purchase__container__inner__text">
-              <h3 class="purchase__container__inner__itemname fw-semibold">キラメキクリーム</h3>
-              <p class="purchase__container__inner__price fw-regular">税込&nbsp;4,000円</p>
-            </div>
-            <div class="purchase__container__inner__btn-group flex-column-center">
-              <a href="#" class="btn btn-online fw-semibold">オンラインショップへ</a>
-              <form action="/cart/" method="POST">
-                <input type="hidden" value="" name="purchase_item">
-                <button type="submit" class="btn btn-purchase fw-semibold">購入する</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="keep">
-        <div class="keep__bg-wrapper flex-column-center">
-          <div class="container keep__container">
-            <div class=" keep__container__inner flex-column-center">
-              <h4 class="keep__container__inner__title ebgaramond fw-bold">Keep&nbsp;Your&nbsp;Skin&nbsp;Beautiful.</h4>
-              <p class="keep__container__inner__subTitle fw-semibold">お肌を美しく保つ</p>
-              <p class="keep__container__inner__text fw-regular">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- #voices -->
-      <section id="voices">
-        <div class="container voices__container">
-          <div class="voices__container__inner">
-            <h4 class="voices__container__title ebgaramond fw-bold">Voices</h4>
-            <h4 class="voices__container__subTitle subTitle fw-semibold">お客様の声</h4>
-            <!-- carousel -->
-            <div class="carousel voices__container__carousel">
-              <!--carousel1つ目 -->
-              <div class="voices__container__carousel__item">
-                  <div class="voices__container__carousel__item__inner">
-                    <picture class="voices__container__carousel__item__photo">
-                      <source media="(max-width: 768px)" srcset="./assets/images/voices/voices_user_A_sp.png">
-                      <img src="./assets/images/voices/voices_user_A_pc.png" alt="">
-                    </picture>
-                    <div class="voices__container__carousel__item__text">
-                      <p class="voices__container__carousel__item__text__name fw-semibold">Aさん</p>
-                      <p class="voices__container__carousel__item__text__voice fw-regular">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                    </div>
-                  </div>
-              </div>
-              <!-- carousel2つ目 -->
-              <div class="voices__container__carousel__item">
-                <div class="voices__container__carousel__item__inner">
-                  <picture class="voices__container__carousel__item__photo">
-                    <source media="(max-width: 768px)" srcset="./assets/images/voices/voices_user_B_sp.png">
-                    <img src="./assets/images/voices/voices_user_B_pc.png" alt="">
-                  </picture>
-                  <div class="voices__container__carousel__item__text">
-                    <p class="voices__container__carousel__item__text__name fw-semibold">Bさん</p>
-                    <p class="voices__container__carousel__item__text__voice fw-regular">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                  </div>
-                </div>
-              </div>
-              <!-- carousel3つ目 -->
-              <div class="voices__container__carousel__item">
-                <div class="voices__container__carousel__item__inner">
-                  <picture class="voices__container__carousel__item__photo">
-                    <source media="(max-width: 768px)" srcset="./assets/images/voices/voices_user_C_sp.png">
-                    <img src="./assets/images/voices/voices_user_C_pc.png" alt="">
-                  </picture>
-                  <div class="voices__container__carousel__item__text">
-                    <p class="voices__container__carousel__item__text__name fw-semibold">Cさん</p>
-                    <p class="voices__container__carousel__item__text__voice fw-regular">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                  </div>
-                </div>
-              </div>
-              <!-- carousel4つ目 -->
-              <div class="voices__container__carousel__item">
-                <div class="voices__container__carousel__item__inner">
-                  <picture class="voices__container__carousel__item__photo">
-                    <source media="(max-width: 768px)" srcset="./assets/images/voices/voices_user_D_sp.png">
-                    <img src="./assets/images/voices/voices_user_D_pc.png" alt="">
-                  </picture>
-                  <div class="voices__container__carousel__item__text">
-                    <p class="voices__container__carousel__item__text__name fw-semibold">Dさん</p>
-                    <p class="voices__container__carousel__item__text__voice fw-regular">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                  </div>
-                </div>
-              </div>
-              <!-- carousel5つ目 -->
-              <div class="voices__container__carousel__item">
-                <div class="voices__container__carousel__item__inner">
-                  <picture class="voices__container__carousel__item__photo">
-                    <source media="(max-width: 768px)" srcset="./assets/images/voices/voices_user_E_sp.png">
-                    <img src="./assets/images/voices/voices_user_E_pc.png" alt="">
-                  </picture>
-                  <div class="voices__container__carousel__item__text">
-                    <p class="voices__container__carousel__item__text__name fw-semibold">Eさん</p>
-                    <p class="voices__container__carousel__item__text__voice fw-regular">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                  </div>
-                </div>
-              </div>
-              <!-- carousel6つ目 -->
-              <div class="voices__container__carousel__item">
-                <div class="voices__container__carousel__item__inner">
-                  <picture class="voices__container__carousel__item__photo">
-                    <source media="(max-width: 768px)" srcset="./assets/images/voices/voices_user_F_sp.png">
-                    <img src="./assets/images/voices/voices_user_F_pc.png" alt="">
-                  </picture>
-                  <div class="voices__container__carousel__item__text">
-                    <p class="voices__container__carousel__item__text__name fw-semibold">Fさん</p>
-                    <p class="voices__container__carousel__item__text__voice fw-regular">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- carouselここまで -->
-        </div>
-      </section>
-      <!-- Q&A -->
-      <section id="qa">
-        <div class="container qa__container">
-          <div class="qa__container__inner">
-            <h4 class="qa__container__title ebgaramond fw-bold">Q&A</h4>
-            <h4 class="qa__container__subTitle subTitle fw-semibold">よくあるご質問</h4>
-            <!-- qa-accortion -->
-            <div class="qa__container__accordion">
-              <!-- qa-1 -->
-              <div class="qa__container__accordion__item">
-                <a class="qa__container__accordion__item__q fw-medium">テキストが入ります。テキストが入ります。テキストが入ります。</a>
-                <p class="qa__container__accordion__item__a fw-medium">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-              </div>
-              <!-- qa-2 -->
-              <div class="qa__container__accordion__item">
-                <a class="qa__container__accordion__item__q fw-medium">テキストが入ります。テキストが入ります。テキストが入ります。</a>
-                <p class="qa__container__accordion__item__a fw-medium">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-              </div>
-              <!-- qa-3 -->
-              <div class="qa__container__accordion__item">
-                <a class="qa__container__accordion__item__q fw-medium">テキストが入ります。テキストが入ります。テキストが入ります。</a>
-                <p class="qa__container__accordion__item__a fw-medium">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-              </div>
-              <!-- qa-4 -->
-              <div class="qa__container__accordion__item">
-                <a class="qa__container__accordion__item__q fw-medium">テキストが入ります。テキストが入ります。テキストが入ります。</a>
-                <p class="qa__container__accordion__item__a fw-medium">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-              </div>
-              <!-- qa-5 -->
-              <div class="qa__container__accordion__item">
-                <a class="qa__container__accordion__item__q fw-medium">テキストが入ります。テキストが入ります。テキストが入ります。</a>
-                <p class="qa__container__accordion__item__a fw-medium">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-              </div>
-            </div>
-            <!-- qa-accordion end -->
-          </div>
-        </div>
-      </section>
-      <!-- 購入 2回目 -->
-      <section id="purchase-2" class="purchase purchase-2">
-        <div class="container purchase__container">
-          <div class="purchase__container__inner flex-column-center">
-            <div class="purchase__container__inner__text">
-              <h3 class="purchase__container__inner__itemname fw-semibold">キラメキクリーム</h3>
-              <p class="purchase__container__inner__price fw-regular">税込&nbsp;4,000円</p>
-            </div>
-            <div class="purchase__container__inner__btn-group flex-column-center">
-              <a href="#" class="btn btn-online fw-semibold">オンラインショップへ</a>
-              <form action="/cart/" method="POST">
-                <input type="hidden" value="" name="purchase_item">
-                <button type="submit" class="btn btn-purchase fw-semibold">購入する</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+
     </main>
-    <!-- footer -->
-    <footer class="footer">
-      <div class="footer__toTop__wrapper">
-        <a href="#" class="footer__toTop"><i class="bi bi-arrow-up-short"></i></a>
-      </div>
-      <div class="footer__wrapper">
-        <div class="footer__contents">
-          <h1 class="footer__logo mercellus fw-regular flex-column-center">Kira-meki</h1>
-          <nav class="footer__gnav">
-            <ul class="footer__gnav__list flex-row-center">
-              <li><a href="/company/">会社概要</a></li>
-              <li><a href="/privacy-policy/">個人情報保護ポリシー</a></li>
-              <li><a href="/contact/">お問い合わせ</a></li>
-            </ul>
-          </nav>
-          <small class="footer__copyright flex-column-center">© 2023 Kira-meki Inc. All rights reserved.</small>
-        </div>
-      </div>
+    <footer>
+
     </footer>
+
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- slickのJavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/scripts/main.js"></script>
   </body>
+
 </html>
